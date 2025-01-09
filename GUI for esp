@@ -15,9 +15,9 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
 local Tab = Window:MakeTab({
-	Name = "Esp",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Esp",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 --[[
@@ -27,10 +27,11 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 Tab:AddButton({
-	Name = "Skelton ESP",
-	Callback = function(loadstring(game:httpget('https://github.com/SharkyzOng/SkeleEsp/raw/refs/heads/main/Esp%20code%20main'))())
-      		print("button pressed")
-  	end    
+    Name = "Skelton ESP",
+    Callback = function()
+        loadstring(game:HttpGet('https://github.com/SharkyzOng/SkeleEsp/raw/refs/heads/main/Esp%20code%20main'))()
+              print("button pressed")
+      end    
 })
 
 --[[
